@@ -1,0 +1,14 @@
+{
+  "name": "puzzle15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/.bin/jest"
+  },
+  "author": "Ihor Sholom",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
