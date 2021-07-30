@@ -6,7 +6,7 @@ module.exports = (stream, pad, side) => ({blocks, win}) => {
 
     if (win) {
         stream.clearLines(1);
-        stream.write('You win!\n');
+        stream.write('\nYou win!\n');
     } else {
         for (let row of blocks) {
             for (let num of row) {

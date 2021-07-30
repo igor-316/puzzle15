@@ -20,7 +20,7 @@ const streamAdapter = {
     write : process.stdout.write.bind(process.stdout)
 };
 const presentState = textStreamPresenter(streamAdapter, config.outputPadding, config.sideSize);
-const game = new Game(config.sideSize);
+const game = new Game(config.sideSize, 1);
 const gameController = new GameController({game, terminate, presentState});
 
 const setup = () => {

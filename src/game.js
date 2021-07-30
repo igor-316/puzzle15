@@ -82,8 +82,7 @@ class Game {
                 if (sequence[i * side + j] === sequence.length - 1) {
                     res.empty = {i, j};
                 }
-                // potentially impossible case
-                // added for ensuring the number of valid positions is correct
+                // can be valid initial positions (block on the right place) due to rotation
                 if (sequence[i * side + j] === i * side + j) {
                     res.correct++;
                 }
